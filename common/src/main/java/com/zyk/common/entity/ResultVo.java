@@ -43,4 +43,8 @@ public class ResultVo {
     public static ResultVo FAILED() {
         return new ResultVo(ResponseValues.FAILED,null);
     }
+    public static ResultVo INFO(ResponseValues responseValues,Object data) {
+        return new ResultVo(responseValues,data);
+    }
+
 }
