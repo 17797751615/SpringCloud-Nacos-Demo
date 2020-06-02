@@ -1,5 +1,8 @@
 package com.hs.file.controller;
 
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
+
 /**
  * @author Think
  * @Classname FileUploadController
@@ -24,5 +27,8 @@ package com.hs.file.controller;
  * ┃ ┫ ┫   ┃ ┫ ┫
  * ┗━┻━┛   ┗━┻━┛
  */
+@RestController
+@RequestMapping("/api/v1.0/file")
 public class FileUploadController {
+
 }
