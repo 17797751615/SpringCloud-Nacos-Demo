@@ -1,14 +1,14 @@
-package com.hs.file.controller.utils;
+package com.hs.file.utils;
 
+import org.springframework.beans.factory.annotation.Value;
+import org.springframework.stereotype.Component;
 import org.springframework.web.multipart.MultipartFile;
 
 import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
-import java.text.DateFormat;
 import java.time.LocalDateTime;
-import java.util.Date;
 import java.util.UUID;
 
 /**
@@ -35,19 +35,26 @@ import java.util.UUID;
  * ┃ ┫ ┫   ┃ ┫ ┫
  * ┗━┻━┛   ┗━┻━┛
  */
+@Component
 public class HsFileUtils {
-    public String saveFile(String filePath,MultipartFile file) throws IOException {
-        StringBuilder builder = new StringBuilder();
-        builder.append(getTenTime()).append(".").append(file.getOriginalFilename());
 
-        String fileName = "/data/hipay/java/health/healthImages/"+ "UUidName";
+    @Value("${file.dir}")
+    private String fileDir;
+
+
+    public String saveFile(MultipartFile file) throws IOException {
+        String originalFilename = file.getOriginalFilename();
+        StringBuilder fileName = new StringBuilder();
+        fileName.append(getTenTime()).append(getUUID()).append(originalFilename.substring(originalFilename.lastIndexOf(".")));
+        String filePath = fileDir+ fileName.toString();
         byte[] bytes = file.getBytes();
-        Path laking = Paths.get(fileName);
+        Path laking = Paths.get(filePath);
         Files.write(laking, bytes);
-        return "";
+        return fileName.toString();
     }
+
     /**
-     * 得到十位时间戳
+     * 时间 例如 20621530
      * @return
      */
     private String getTenTime() {
@@ -56,5 +63,13 @@ public class HsFileUtils {
         sb.append(localDateTime.getYear()-2000).append(localDateTime.getMonthValue())
         .append(localDateTime.getDayOfMonth()).append(localDateTime.getHour()).append(localDateTime.getMinute());
         return sb.toString();
+    }
+
+    /**
+     * 得到一个唯一的id
+     * @return UUID
+     */
+    private String getUUID(){
+        return UUID.randomUUID().toString().toLowerCase().replaceAll("-","_");
     }
 }
