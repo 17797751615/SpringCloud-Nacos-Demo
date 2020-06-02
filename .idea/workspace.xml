@@ -1,26 +1,62 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="dd3c55d3-2391-40b2-b2c6-2d9094393065" name="Default Changelist" comment="" />
-    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <list default="true" id="dd3c55d3-2391-40b2-b2c6-2d9094393065" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/thriftCompiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fourday/customer/customer.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/spring-nacos-demo.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fourday/provider/provider.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/twoday/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/twoday/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/twoday/target/classes/META-INF/oneday.kotlin_module" beforeDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="CodeStyleSettingsInfer">
+    <option name="done" value="true" />
+  </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="Enum" />
         <option value="Class" />
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="importAutomatically" value="true" />
+      </MavenImportingSettings>
+    </option>
+  </component>
+  <component name="ProjectCodeStyleSettingsMigration">
+    <option name="version" value="1" />
+  </component>
   <component name="ProjectId" id="1VMuZYnm66F0LPf5OIGIZbgC8An" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
   <component name="PropertiesComponent">
     <property name="RequestMappingsPanelOrder0" value="0" />
     <property name="RequestMappingsPanelOrder1" value="1" />
     <property name="RequestMappingsPanelWidth0" value="75" />
     <property name="RequestMappingsPanelWidth1" value="75" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="last_opened_file_path" value="$USER_HOME$/Desktop/1218" />
@@ -30,19 +66,23 @@
     <property name="restartRequiresConfirmation" value="false" />
     <property name="settings.editor.selected.configurable" value="spring.boot" />
   </component>
-  <component name="RunDashboard">
-    <option name="ruleStates">
-      <list>
-        <RuleState>
-          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
-        </RuleState>
-        <RuleState>
-          <option name="name" value="StatusDashboardGroupingRule" />
-        </RuleState>
-      </list>
-    </option>
+  <component name="RebelAgentSelection">
+    <selection>jr</selection>
   </component>
-  <component name="RunManager" selected="Spring Boot.App">
+  <component name="RunManager" selected="Application.Test">
+    <configuration name="Test" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.zyk.common.enums.Test" />
+      <module name="common" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.zyk.common.enums.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="App" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
       <module name="twoday" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.zyk.oneday.App" />
@@ -59,6 +99,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Test" />
         <item itemvalue="Spring Boot.App" />
         <item itemvalue="Spring Boot.NacosMain" />
       </list>
@@ -76,10 +117,81 @@
       <updated>1577075340081</updated>
       <workItem from="1577075344066" duration="1453000" />
       <workItem from="1577239464894" duration="5927000" />
+      <workItem from="1591066466648" duration="7343000" />
     </task>
+    <task id="LOCAL-00001" summary="add git ignore">
+      <created>1591066899958</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1591066899958</updated>
+    </task>
+    <task id="LOCAL-00002" summary="add common module">
+      <created>1591067084363</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1591067084363</updated>
+    </task>
+    <task id="LOCAL-00003" summary="add common  ResponseValues">
+      <created>1591075803102</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1591075803102</updated>
+    </task>
+    <task id="LOCAL-00004" summary="fix common  ResponseValues">
+      <created>1591076282417</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1591076282417</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="add git ignore" />
+    <MESSAGE value="add common module" />
+    <MESSAGE value="add common  ResponseValues" />
+    <MESSAGE value="fix common  ResponseValues" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix common  ResponseValues" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="721" y="127" key="#com.intellij.ide.util.MemberChooser" timestamp="1591068635955">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="721" y="127" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1591068635955" />
+    <state x="401" y="39" key="CommitChangelistDialog2" timestamp="1591076281262">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="401" y="39" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1591076281262" />
+    <state width="1867" height="267" key="GridCell.Tab.0.bottom" timestamp="1591073060539">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1867" height="267" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1591073060539" />
+    <state width="1867" height="267" key="GridCell.Tab.0.center" timestamp="1591073060539">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1867" height="267" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1591073060539" />
+    <state width="1867" height="267" key="GridCell.Tab.0.left" timestamp="1591073060538">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1867" height="267" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1591073060538" />
+    <state width="1867" height="267" key="GridCell.Tab.0.right" timestamp="1591073060539">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1867" height="267" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1591073060539" />
+    <state x="452" y="187" key="Vcs.Push.Dialog.v2" timestamp="1591076351728">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="452" y="187" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1591076351728" />
+    <state x="161" y="144" key="new project wizard" timestamp="1591067052776">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="161" y="144" key="new project wizard/0.0.1920.1040@0.0.1920.1040" timestamp="1591067052776" />
   </component>
 </project>
