@@ -12,6 +12,7 @@
         <module>twoday</module>
         <module>threeday</module>
         <module>fourday</module>
+        <module>common</module>
     </modules>
     <parent>
         <groupId>org.springframework.boot</groupId>
