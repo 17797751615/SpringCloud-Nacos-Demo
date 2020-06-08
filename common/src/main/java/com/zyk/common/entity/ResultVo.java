@@ -28,13 +28,15 @@ import java.sql.ResultSet;
  * ┃ ┫ ┫   ┃ ┫ ┫
  * ┗━┻━┛   ┗━┻━┛
  */
-public class ResultVo {
+public class ResultVo<T> {
     private String code;
-    private String message;
-    private Object data;
-    public ResultVo (ResponseValues responseValues,Object data) {
+    private String enMessage;
+    private String zhMessage;
+    private T data;
+    public ResultVo (ResponseValues responseValues,T data) {
         this.code = responseValues.getCode();
-        this.message = responseValues.getMessage();
+        this.enMessage = responseValues.getEnMessage();
+        this.zhMessage = responseValues.getEnMessage();
         this.data = data;
     }
     public static ResultVo SUCCESS() {
@@ -47,4 +49,35 @@ public class ResultVo {
         return new ResultVo(responseValues,data);
     }
 
+    public String getCode() {
+        return code;
+    }
+
+    public void setCode(String code) {
+        this.code = code;
+    }
+
+    public String getEnMessage() {
+        return enMessage;
+    }
+
+    public void setEnMessage(String enMessage) {
+        this.enMessage = enMessage;
+    }
+
+    public String getZhMessage() {
+        return zhMessage;
+    }
+
+    public void setZhMessage(String zhMessage) {
+        this.zhMessage = zhMessage;
+    }
+
+    public T getData() {
+        return data;
+    }
+
+    public void setData(T data) {
+        this.data = data;
+    }
 }

@@ -28,27 +28,27 @@ public enum ResponseValues {
     /**
      *
      */
-    SUCCESS("200","请求成功"),
+    SUCCESS("200","请求成功","request success"),
+    NO_PERSON("401","查无此人","no person"),
     /**
      *
      */
-    FAILED("500","服务器内部异常"),
-    /**
-     *
-     */
-    WAIT("300","请等待");
+    FAILED("500","服务器内部异常","Server internal exception");
 
     /**
      *
      * @param code 返回值code
-     * @param message 返回信息
+     * @param zhMessage 返回中文信息
+     * @param enMessage 返回英文信息
      */
-    ResponseValues(String code, String message) {
+    ResponseValues(String code, String zhMessage,String enMessage) {
         this.code = code;
-        this.message = message;
+        this.enMessage = enMessage;
+        this.zhMessage = zhMessage;
     }
     private String code;
-    private String message;
+    private String zhMessage;
+    private String enMessage;
 
     public String getCode() {
         return code;
@@ -58,11 +58,19 @@ public enum ResponseValues {
         this.code = code;
     }
 
-    public String getMessage() {
-        return message;
+    public String getZhMessage() {
+        return zhMessage;
     }
 
-    public void setMessage(String message) {
-        this.message = message;
+    public void setZhMessage(String zhMessage) {
+        this.zhMessage = zhMessage;
+    }
+
+    public String getEnMessage() {
+        return enMessage;
+    }
+
+    public void setEnMessage(String enMessage) {
+        this.enMessage = enMessage;
     }
 }
