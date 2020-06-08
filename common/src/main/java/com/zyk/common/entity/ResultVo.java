@@ -36,7 +36,7 @@ public class ResultVo<T> {
     public ResultVo (ResponseValues responseValues,T data) {
         this.code = responseValues.getCode();
         this.enMessage = responseValues.getEnMessage();
-        this.zhMessage = responseValues.getEnMessage();
+        this.zhMessage = responseValues.getZhMessage();
         this.data = data;
     }
     public static ResultVo SUCCESS() {
