@@ -13,6 +13,7 @@
         <module>threeday</module>
         <module>fourday</module>
         <module>common</module>
+        <module>hs_file-pro</module>
     </modules>
     <parent>
         <groupId>org.springframework.boot</groupId>
