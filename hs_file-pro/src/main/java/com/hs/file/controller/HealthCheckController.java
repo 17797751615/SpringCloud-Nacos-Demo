@@ -42,11 +42,11 @@ public class HealthCheckController {
         return ResultVo.INFO(ResponseValues.NO_PERSON,new Date());
     }
     @PostMapping("/user")
-    public String addUser(@RequestBody @Valid User user, BindingResult bindingResult) {
+    public String addUser(@RequestBody @Valid User user) {
         // 如果有参数校验失败，会将错误信息封装成对象组装在BindingResult里
-        for (ObjectError error : bindingResult.getAllErrors()) {
-            return error.getDefaultMessage();
-        }
+//        for (ObjectError error : bindingResult.getAllErrors()) {
+//            return error.getDefaultMessage();
+//        }
         return null;
     }
 }
