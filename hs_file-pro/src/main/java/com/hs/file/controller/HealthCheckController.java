@@ -43,6 +43,7 @@ public class HealthCheckController {
     }
     @PostMapping("/user")
     public String addUser(@RequestBody @Valid User user) {
+        System.out.println(user);
         // 如果有参数校验失败，会将错误信息封装成对象组装在BindingResult里
 //        for (ObjectError error : bindingResult.getAllErrors()) {
 //            return error.getDefaultMessage();
